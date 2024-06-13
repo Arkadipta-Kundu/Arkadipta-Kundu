@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkadipta Kundu - Personal Website</title>
     <link href="https://unpkg.com/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        /* Custom CSS for additional styling */
+        .animated-header {
+            animation: fadeInDown 1s;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-purple-600 to-blue-500 shadow-md">
+    <header class="bg-gradient-to-r from-purple-600 to-blue-500 shadow-md animated-header">
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-white">
             <h1 class="text-4xl font-bold">Arkadipta Kundu</h1>
             <p class="text-lg mt-2">Aspiring Software Development Engineer</p>
@@ -22,7 +30,7 @@
     <main class="mt-12">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- About Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">About Me</h2>
                 <p class="text-lg leading-relaxed text-gray-700">I am Arkadipta Kundu, an aspiring Software Development
                     Engineer currently focusing on learning Java, DSA, and Web Development, with a strong interest in
@@ -30,7 +38,7 @@
             </section>
 
             <!-- Skills Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">Skills</h2>
                 <ul class="list-disc list-inside text-lg text-gray-700">
                     <li>HTML</li>
@@ -45,21 +53,18 @@
             </section>
 
             <!-- Projects Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up" data-aos-delay="200">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">Recent Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white shadow-md rounded-lg p-6">
-                        <h3 class="text-xl font-semibold text-purple-600">GLitcH-keys
-                        </h3>
-                        <p class="text-gray-700 mb-2">its a simple typing site to test your typing speed
-                        </p>
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInLeft">
+                        <h3 class="text-xl font-semibold text-purple-600">GLitcH-keys</h3>
+                        <p class="text-gray-700 mb-2">its a simple typing site to test your typing speed</p>
                         <a href="https://arkadipta-kundu.github.io/GLitcH-keys/"
                             class="text-blue-500 hover:underline">Live Site</a> -
                         <a href="https://github.com/Arkadipta-Kundu/GLitcH-keys"
-                            class="text-blue-500 hover:underline">GitHub
-                            Repository</a>
+                            class="text-blue-500 hover:underline">GitHub Repository</a>
                     </div>
-                    <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInRight">
                         <h3 class="text-xl font-semibold text-purple-600">EatThatFrog</h3>
                         <p class="text-gray-700 mb-2">A productivity application to help you manage tasks effectively.
                         </p>
@@ -67,14 +72,14 @@
                         <a href="https://github.com/glitch7584/eatthatfrog" class="text-blue-500 hover:underline">GitHub
                             Repository</a>
                     </div>
-                    <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInLeft">
                         <h3 class="text-xl font-semibold text-purple-600">GlitchTimer</h3>
                         <p class="text-gray-700 mb-2">A simple and efficient timer application.</p>
                         <a href="https://glitchtimer.netlify.app/" class="text-blue-500 hover:underline">Live Site</a> -
                         <a href="https://github.com/glitch7584/GlitchTimer" class="text-blue-500 hover:underline">GitHub
                             Repository</a>
                     </div>
-                    <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInRight">
                         <h3 class="text-xl font-semibold text-purple-600">SkyRunner</h3>
                         <p class="text-gray-700 mb-2">An exciting running game developed with JavaScript.</p>
                         <a href="https://github.com/glitch7584/SkyRunner" class="text-blue-500 hover:underline">GitHub
@@ -84,15 +89,15 @@
             </section>
 
             <!-- Coding Profiles Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up" data-aos-delay="300">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">Coding Profiles</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInLeft">
                         <h3 class="text-xl font-semibold text-purple-600">Leetcode</h3>
                         <a href="https://leetcode.com/u/arkadiptak47/" class="text-blue-500 hover:underline">Profile
                             Link</a>
                     </div>
-                    <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInRight">
                         <h3 class="text-xl font-semibold text-purple-600">HackerEarth</h3>
                         <a href="https://www.hackerearth.com/@arkadipta.kundu"
                             class="text-blue-500 hover:underline">Profile Link</a>
@@ -101,28 +106,23 @@
             </section>
 
             <!-- Blog Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up" data-aos-delay="400">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">My Blogs</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white shadow-md rounded-lg p-6">
-                        <!-- <img src="https://unsplash.com/photos/man-sitting-on-rock-surrounded-by-water--Q_t4SCN8c4" alt="Blog Post Image"
-                            class="mb-4 rounded-lg"> -->
+                    <div class="bg-white shadow-md rounded-lg p-6 animate__animated animate__fadeInLeft">
                         <h3 class="text-xl font-semibold text-purple-600">28-05-2024</h3>
                         <p class="text-gray-700 mb-2">Hi i am arka and this is my first blog and i don't really know
                             what to write but i need to feel this space so , hare is a small information about me , i am
                             really busy right now with my collge exams . End of blog ! You can check my projects</p>
                         <a href="#" class="text-blue-500 hover:underline">Read more</a>
                     </div>
-
                 </div>
             </section>
 
             <!-- Contact Section -->
-            <section class="mb-12">
+            <section class="mb-12" data-aos="fade-up" data-aos-delay="500">
                 <h2 class="text-3xl font-semibold text-blue-600 mb-4">Contact</h2>
                 <ul class="space-y-2">
-                    <!-- <li><a href="https://www.linkedin.com/in/arkadipta-kundu-964a901aa/"
-                            class="text-lg text-purple-600 hover:text-purple-800">LinkedIn</a></li> -->
                     <li><a href="https://github.com/Arkadipta-Kundu"
                             class="text-lg text-purple-600 hover:text-purple-800">GitHub</a></li>
                     <li><a href="https://twitter.com/kunduarka49"
@@ -135,12 +135,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-r from-purple-600 to-blue-500 shadow-md mt-12">
+    <footer class="bg-gradient-to-r from-purple-600 to-blue-500 shadow-md mt-12 animated-header">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-white">
             <p class="text-sm">&copy; 2024 Arkadipta Kundu. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
