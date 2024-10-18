@@ -25,6 +25,29 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+
+/* Add keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -32,6 +55,10 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*===== BASE =====*/
@@ -48,14 +75,15 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
-
-h1, h2, p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -117,9 +145,14 @@ img {
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav__link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #bb86fc;
+}
   font-weight: var(--font-semi);
 }
 @media screen and (max-width: 767px) {

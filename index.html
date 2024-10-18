@@ -9,6 +9,46 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Arkadipta Kundu</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .section-title {
+            color: #bb86fc;
+        }
+        .coding-profiles__link, .work__link {
+            color: #03dac6;
+        }
+        .work__overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .home__social-icon {
+            font-size: 2rem;
+            color: #03dac6;
+            transition: color 0.3s;
+        }
+        .home__social-icon:hover {
+            color: #bb86fc;
+        }
+        .nav {
+            background-color: #f06c74; /* Single color for navbar */
+        }
+        .nav__link {
+            color: #ffffff; /* Text color for better contrast */
+        }
+        .nav__link:hover {
+            color: #bb86fc; /* Hover color */
+        }
+        .active-link {
+            color: #bb86fc; /* Active link color */
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +61,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Coding Profiles</a></li>
+                    <li class="nav__item"><a href="#coding-profiles" class="nav__link">Coding Profiles</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                 </ul>
             </div>
@@ -51,7 +91,61 @@
                     <mask id="mask0" mask-type="alpha">
                         <path
                             d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                    </mask>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="coding-profiles__container">
+                        <p>You can view my <a href="https://leetcode.com/u/arkadiptak47/" class="coding-profiles__link">LeetCode
+                                profile</a> and <a href="https://github.com/Arkadipta-Kundu"
+                                class="coding-profiles__link">GitHub profile</a> to
+                            check on my progress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="https://arkadipta-kundu.github.io/GLitcH-keys/" class="work__img"
+                                    data-live-site="https://arkadipta-kundu.github.io/GLitcH-keys/"
+                                    data-code="https://github.com/Arkadipta-Kundu/GLitcH-keys">
+                                    <img src="assets/img/work1.png" alt="GLitcH-keys">
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <div class="work__overlay">
+                                    <a class="work__link" href="https://arkadipta-kundu.github.io/GLitcH-keys/" target="_blank">Live
+                                        Site</a>
+                                    <a class="work__link" href="https://github.com/Arkadipta-Kundu/GLitcH-keys" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="https://eatthatfrog.netlify.app/" class="work__img">
+                                    <img src="assets/img/work2.png" alt="Eat That Frog">
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <div class="work__overlay">
+                                    <a class="work__link" href="https://eatthatfrog.netlify.app/" target="_blank">Live Site</a>
+                                    <a class="work__link" href="https://github.com/Arkadipta-Kundu/EatThatFrog" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
                     <g mask="url(#mask0)">
                         <path
                             d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
