@@ -221,9 +221,43 @@ img {
   align-self: center;
 }
 .home__title {
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  font-size: 3rem;
+  line-height: 1.2;
 }
+
+.home__greeting {
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #f06d75; /* Pastel pink */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+.home__name {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace; /* Monospace font resembling code */
+    font-weight: 700;
+    background: linear-gradient(90deg, #3E6FF7, #9B51E0); /* Light blue to purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.8); /* Soft white glow */
+    letter-spacing: 1px; /* Tighter letter-spacing for a binary-like feel */
+    font-size: 1.5em; /* Slightly larger font size for emphasis */
+    text-transform: uppercase; /* Gives it a more blocky, techy look */
+    overflow: hidden; /* Ensures the text is hidden until animated */
+    white-space: nowrap; /* Keeps the text on a single line */
+    border-right: 0.15em solid #fff; /* Creates the caret effect */
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+
 .home__title-color {
   color: var(--first-color);
 }
