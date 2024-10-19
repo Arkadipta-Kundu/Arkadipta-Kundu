@@ -310,6 +310,26 @@ img {
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
+.skills__list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills__list li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.animated-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-icon:hover {
+    transform: scale(1.3) rotate(15deg); /* Scale and rotate */
+    color: #FF6347; /* Change color on hover (optional) */
+}
+
 .skills__names {
   display: flex;
   align-items: center;
